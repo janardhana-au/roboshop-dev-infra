@@ -13,8 +13,8 @@ provider "aws" {
 }
 
 module "vpc" {
-    source = "../../terraform-vpc-module"
-    #source = "git::https://github.com/janardhana-au/terraform-vpc-module.git?ref=main"
+    #source = "../../terraform-vpc-module"
+    source = "git::https://github.com/janardhana-au/terraform-vpc-module.git?ref=main"
     cidr_block = var.cidr_block
     project = var.project
     environment = var.environment
